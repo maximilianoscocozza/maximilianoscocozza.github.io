@@ -1,7 +1,5 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/mxscczz/scocozza.maximiliano/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Markdown
@@ -34,4 +32,189 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Pablo Barberá, London School of Economics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assistant Professor in Computational Social Science at the London School of Economics.">
+    <meta name="author" content="Pablo Barberá">
+	
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/myresume.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+  
+    <style>
+      body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="http://www.pablobarbera.com/" class="brand">Pablo Barberá</a>
+          <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="code.html">Code</a></li>
+              <li><a href="teaching.html">Teaching</a></li>
+              <li><a href="blog/index.html">Blog</a></li>
+          </ul>                
+
+            </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+
+      
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+			<div class="well">
+                <div class="avatar">
+                    <img src="img/avatar.JPG">
+                </div><!--/avatar -->
+                <br class="clearfix">
+                
+                <div class="bio">
+                    <h1>Pablo Barberá</h1>
+					<p>Assistant Professor<br> Methodology Department <br> London School of Economics</p>
+          <p><a href="mailto:P.Barbera[at]lse.ac.uk">P.Barbera@lse.ac.uk</a> <i class="icon-envelope"></i></p>
+          <p><a href="http://www.twitter.com/p_barbera/">@p_barbera</a> <i class="fa fa-twitter"></i></p>
+          <p><a href="http://www.github.com/pablobarbera/">pablobarbera</a> <i class="fa fa-github"></i></p>
+          <p><a href="https://scholar.google.com/citations?user=jGLKJUoAAAAJ&amp;hl=en">Google Scholar</a> <i class="fa fa-google"></i></p>
+          <p><a href="https://publons.com/a/1291880/">Publons profile</a> <i class="fa fa-pencil-square-o"></i></p>
+                </div><!--/bio -->
+
+                <div align="center"><a class="btn no-radius btn-resume" href="http://www.pablobarbera.com/static/cv_barbera.pdf"><i class="fa fa-file-pdf-o"></i> Download my CV</a></div>
+               
+			</div><!--/.well -->
+
+        </div><!--/span-->
+		
+        <div class="span8">
+          <div class="hero-unit">
+      
+            <p>I am an Assistant Professor of Computational Social Science in the <a href="http://www.lse.ac.uk/methodology">Methodology Department</a> at the <a href="http://www.lse.ac.uk/">London School of Economics</a>, which I joined in 2018 after holding a position of Assistant Professor in International Relations at the <a href="http://dornsife.usc.edu/sir/">University of Southern California</a>. I received my PhD in Political Science from New York University in 2015, where I was also a graduate research associate in the <a href="http://smapp.nyu.edu">Social Media and Political Participation lab</a> and a Moore-Sloan Post-Doctoral Fellow at the <a href="http://cds.nyu.edu/">NYU Center for Data Science</a>. My primary areas of research include social media and politics, computational social science, and comparative electoral behavior and political representation.</p>
+
+		  </div>
+
+
+          
+
+		  
+		  <div class="header">
+      <hr>
+			<h2>Selected publications</h2><br>
+      </div>
+          <div class="row">
+
+           <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> From Liberation to Turmoil: Social Media and Democracy</h4>
+              <i>Journal of Democracy</i>, 2017.<br> Co-authored with Joshua Tucker, Yannis Theocharis, and Margaret Roberts.
+              <p><a href="https://muse.jhu.edu/article/671987/summary">Link</a>  | <a data-toggle="collapse" data-target="#jod">Expand abstract »</a></p><div id="jod" class="collapse out"> How can one technology—social media—simultaneously give rise to hopes for liberation in authoritarian regimes, be used for repression by these same regimes, and be harnessed by antisystem actors in democracy? We present a simple framework for reconciling these contradictory developments based on two propositions: 1) that social media give voice to those previously excluded from political discussion by traditional media, and 2) that although social media democratize access to information, the platforms themselves are neither inherently democratic nor nondemocratic, but represent a tool political actors can use for a variety of goals, including, paradoxically, illiberal goals.</div><p></p>
+            </div><!--/span-->
+            
+           <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> The New Public Address System: Why Do World Leaders Adopt Social Media?</h4>
+              <i>International Studies Quarterly</i>, 2017.<br> Co-authored with Thomas Zeitzoff.
+              <p><a href="https://academic.oup.com/isq/article/doi/10.1093/isq/sqx047/4430887/The-New-Public-Address-System-Why-Do-World-Leaders">Link</a> | <a href="http://www.pablobarbera.com/static/world_leaders_paper.pdf">Preprint</a> | <a href="http://www.pablobarbera.com/static/barbera-zeitzoff-ISQ-online-appendix.pdf"> Online Appendix</a> | <a href="http://www.github.com/pablobarbera/world-leaders-isq">Replication materials</a> | <a data-toggle="collapse" data-target="#abstract6">Expand abstract »</a></p><div id="abstract6" class="collapse out"> The emergence of social media - and in particular Twitter and Facebook - has led scholars to focus on its effects on mass behavior and protest. Yet an important, and unanswered question is what explains the variation in the adoption and use of social media by world leaders?  By the end of 2014, over 76% of world leaders had an active presence on social media, and used their accounts to communicate with domestic and international audiences. We look at several different potential hypotheses that explain adoption of social media by world leaders including: modernization, social pressure, level of democratization, and diffusion. We find strong support that increased political pressure from social unrest and higher levels of democratization are both associated with leader adoption of social media platforms.  Although the association we identify is not causal, these findings reveal the relationship between institutional and political pressures and the political communication of country leaders.</div><p></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> The Critical Periphery in the Growth of Social Protests </h4>
+              <em>PLOS ONE</em>, 2015, 10 (11).<br>
+              Co-authored with Ning Wang, Richard Bonneau, John T. Jost, Jonathan Nagler, Joshua Tucker and Sandra González-Bailón
+              <p><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143611">Link</a> | <a href="http://journals.plos.org/plosone/article/asset?unique&amp;id=info:doi/10.1371/journal.pone.0143611.s001">Online appendix</a> | <a href="http://dx.doi.org/10.7910/DVN/WCXK3Z">Replication data</a> | <a data-toggle="collapse" data-target="#coreperiphery">Expand abstract »</a></p><div id="coreperiphery" class="collapse out"> Social media have provided instrumental means of communication in many recent political protests. The efficiency of online networks in disseminating timely information has been praised by many commentators; at the same time, users are often derided as “slacktivists” because of the shallow commitment involved in clicking a forwarding button. Here we consider the role of these peripheral online participants, the immense majority of users who surround the small epicenter of protests, representing layers of diminishing online activity around the committed minority. We analyze three datasets tracking protest communication in different languages and political contexts through the social media platform Twitter and employ a network decomposition technique to examine their hierarchical structure. We provide consistent evidence that peripheral participants are critical in increasing the reach of protest messages and generating online content at levels that are comparable to core participants. Although committed minorities may constitute the heart of protest movements, our results suggest that their success in maximizing the number of online citizens exposed to protest messages depends, at least in part, on activating the critical periphery. Peripheral users are less active on a per capita basis, but their power lies in their numbers: their aggregate contribution to the spread of protest messages is comparable in magnitude to that of core participants. An analysis of two other datasets unrelated to mass protests strengthens our interpretation that core-periphery dynamics are characteristically important in the context of collective action events. Theoretical models of diffusion in social networks would benefit from increased attention to the role of peripheral nodes in the propagation of information and behavior. </div><p></p>
+            </div><!--/span-->
+
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Tweeting from Left to Right: Is Online Political Communication More Than an Echo Chamber?</h4>
+              <em>Psychological Science</em>, 2015, 26 (10), 1531-1542.<br>Co-authored with John T. Jost, Jonathan Nagler, Joshua Tucker, and Richard Bonneau.
+              <p><a href="http://pss.sagepub.com/content/26/10/1531">Link</a> | <a href="http://www.pablobarbera.com/static/PSS-supplementary-materials.pdf">Online appendix</a> | <a href="http://www.github.com/SMAPPNYU/echo_chambers">Replication materials</a> and <a href="http://dx.doi.org/10.7910/DVN/F9ICHH">data</a> | <a data-toggle="collapse" data-target="#lefttoright">Expand abstract »</a></p><div id="lefttoright" class="collapse out"> We estimated ideological preferences of 3.8 million Twitter users and, using a dataset of 150 million tweets concerning 12 political and non-political issues, explored whether online communication resembles an "echo chamber" due to selective exposure and ideological segregation or a "national conversation." We observed that information was exchanged primarily among individuals with similar ideological preferences for political issues (e.g., presidential election, government shutdown) but not for many other current events (e.g., Boston marathon bombing, Super Bowl). Discussion of the Newtown shootings in 2012 reflected a dynamic process, beginning as a "national conversation" before being transformed into a polarized exchange. With respect to political and non-political issues, liberals were more likely than conservatives to engage in cross-ideological dissemination, highlighting an important asymmetry with respect to the structure of communication that is consistent with psychological theory and research. We conclude that previous work may have overestimated the degree of ideological segregation in social media usage. </div><p></p>
+            </div><!--/span-->
+
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Birds of the Same Feather Tweet Together. Bayesian Ideal Point Estimation Using Twitter Data. </h4>
+              <em>Political Analysis</em>, 2015, 23 (1), 76-91
+              <p><a href="http://pan.oxfordjournals.org/content/23/1/76.full">Link</a> | <a href="http://www.pablobarbera.com/static/barbera_twitter_ideal_points.pdf">Pre-print</a> | <a href="http://www.pablobarbera.com/static/supplementary_materials.pdf">Online appendix</a> | <a href="http://dx.doi.org/10.7910/DVN/26589">Replication materials</a> | <a href="https://github.com/pablobarbera/twitter_ideology">GitHub tutorial</a> | <a data-toggle="collapse" data-target="#birds">Expand abstract »</a></p><div id="birds" class="collapse out"> Politicians and citizens increasingly engage in political conversations on social media outlets such as Twitter. In this paper I show that the structure of the social networks in which they are embedded can be a source of information about their ideological positions. Under the assumption that social networks are homophilic, I develop a Bayesian Spatial Following model that considers ideology as a latent variable, whose value can be inferred by examining which politics actors each user is following. This method allows us to estimate ideology for more actors than any existing alternative, at any point in time and across many polities. I apply this method to estimate ideal points for a large sample of both elite and mass public Twitter users in the US and five European countries. Thee estimated positions of legislators and political parties replicate conventional measures of ideology. The method is also able to successfully classify individuals who state their political preferences publicly and a sample of users matched with their party registration records. To illustrate the potential contribution of these estimates, I examine the extent to which online behavior during the 2012 US presidential election campaign is clustered along ideological lines. </div><p></p>
+            </div><!--/span-->
+
+            <div class="span8"><a href="research.html">Full list of publications and working papers ￫</a></div>
+          </div><!--/row-->
+		  
+
+      <div class="header">
+      <hr>
+      <h2>Recent Blog Posts</h2><br>
+
+      </div>
+      
+          <div class="row">
+            <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2017/12/06/this-explains-how-social-media-can-both-weaken-and-strengthen-democracy/">This explains how social media can both weaken - and strengthen - democracy.</a></h4>
+              <p>Co-authored with Joshua Tucker, Yannis Theocharis, and Margaret E. Roberts.<br>Published on <a href="http://www.washingtonpost.com/blogs/monkey-cage/">The Monkey Cage/Washington Post</a>.</p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="https://www.washingtonpost.com/news/monkey-cage/wp/2016/11/04/twitter-trolls-hurt-democracy-more-than-you-realize-heres-how/">Twitter trolls are actually hurting democracy.</a></h4>
+              <p>Co-authored with Yannis Theocharis, Zoltan Fazekas, and Sebastian Popa.<br>Published on <a href="http://www.washingtonpost.com/blogs/monkey-cage/">The Monkey Cage/Washington Post</a>.</p>
+            </div><!--/span-->
+            <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="http://www.washingtonpost.com/blogs/monkey-cage/wp/2015/06/16/who-is-the-most-conservative-republican-candidate-for-president/">Who is the most conservative Republican candidate for president?</a></h4>
+              <p>Published on <a href="http://www.washingtonpost.com/blogs/monkey-cage/">The Monkey Cage/Washington Post</a>.</p>
+            </div><!--/span-->
+                    <div class="span8"><h3><a href="http://www.pablobarbera.com/blog">Blog Archive ￫</a></h3></div>
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+<!--
+      <footer>
+        <p><i class="icon-home"></i> 1234 main St.&nbsp;&nbsp;<i class="icon-map-marker"></i> Anytown, XX 12345&nbsp;&nbsp;<i class="icon-signal"></i> (555)123-4567&nbsp;&nbsp;<i class="icon-globe"></i> www.yoursite.com&nbsp;&nbsp;<i class="icon-envelope"></i> John.doe@domainname.com </p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/myresume.js"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1191254-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  
+
+</div></body></html>
