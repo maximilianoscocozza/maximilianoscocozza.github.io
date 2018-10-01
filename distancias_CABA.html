@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang= "en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+  		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114996417-1"></script>
+  		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-114996417-1');
+  		</script>
+		
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-N56JG2D');</script>
+		<!-- End Google Tag Manager -->
+		
+		
+    	<meta charset="utf-8">
+    	<title>Ecobici Data</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="Max's Ecobici article">
+    	<meta name="author" content="Maximiliano Scocozza">
+		<link rel="stylesheet" href="maximilianoscocozza.github.io/bootstrap.css" >
+		<link rel="stylesheet" href="maximilianoscocozza.github.io/style.css">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+		<style>
+		html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+		</style>
+
+  		<!-- Global site tag (gtag.js) - Google Analytics -->
+  		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114996417-1"></script>
+  		<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-114996417-1');
+  		</script>
+  	</head>
+
+<body class="w3-light-grey">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N56JG2D"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+	<!-- Page Container -->
+	<div class="w3-light-grey w3-content w3-margin-top" style="max-width: 1100px;">
+
+		<!-- The Grid -->
+  		<div class="w3-row-padding w3-light-grey">
+			<!-- Right Column -->
+			<div class="w3-twothirdish">
+				
+				<div class="w3-display-container w3-card w3-margin-bottom">
+					<img src="https://raw.githubusercontent.com/maximilianoscocozza/maximilianoscocozza.github.io/master/Climate%20Comunities%20-%20Centralidad%20del%20mensajero.jpg" style="width:100%" alt="network graph" >
+				</div>
+        
+				<div class="w3-container w3-card w3-white w3-margin-bottom">
+					<h3 class="w3-text-grey w3-padding-16">Lab de visualización de datos</h3>
+          <h6 class="w3-opacity w3-medium">Un espacio dedicado a la exploración de datos a través de la visualización de patrones latentes.</h6>
+          <hr>
+          
+					<div class="w3-container w3-text-left">
+						<h5 class="w3-opacity"><b>Cercanía entre barrios de la Ciudad de Buenos Aires en transporte público</b></h5>
+						<p><h6  class="w3-opacity w3-justify">Basado en las cordenadas del centroide de cada barrio de la CABA y computando el tiempo de viaje según los especificado en la plataforma de navegación de Google maps es posible trazar una red de barrios a partir de su "cercanía" en tiempo de viaje.
+            Para esto se calculó el tiempo de viaje entre cada uno de los barrios utilizando medios de transportes públicos en el horario de las 8am un día de semana y luego se graficó los resultados en un grafo bidireccional. Si bien es razonable esperar que aquellos barrios geograficamente perimetrales, se encuentren en el perímetro del grafo de tiempo de viaje, es notable como la trama de los subtes influye en la cercanía de ciertos barrios como Recoleta y Parque Patricios. Debido que para asegurar una visualización efectiva se decidió sólo graficar las conexiones con un tiempo total de viaje menor a 50 minutos, se evidencia cuán aislado se encuentra villa riachuelo.</h6></p>
+						
+						<img src="https://raw.githubusercontent.com/maximilianoscocozza/maximilianoscocozza.github.io/master/distancias%20matinales%20en%20bondi%20-%20GCBA.jpg" style="width:100%" alt="network graph" >
+						<hr>
+						
+						<p><h6 class="w3-left-align w3-tiny">Los datos fueron procesados y las imágenes producidas enteramente con R a través de Rstudio y con la ayuda de los siguientes paquetes de código: 
+						</br>
+						Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+						</br>
+						Frank E Harrell Jr, with contributions from Charles Dupont and many others. (2018).Hmisc: Harrell Miscellaneous. R package version 4.1-1. https://CRAN.R-project.org/package=Hmisc
+						</br>
+						D. Kahle and H. Wickham. ggmap: Spatial Visualization with ggplot2. The R Journal, 5(1), 144-161. http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf
+						</br>
+						Garrett Grolemund, Hadley Wickham (2011). Dates and Times Made Easy with lubridate. Journal of Statistical Software, 40(3), 1-25. http://www.jstatsoft.org/v40/i03/
+						</br>
+						David Cooley (2018). googleway: Accesses Google Maps APIs to Retrieve Data and Plot Maps. R package version 2.7.0. https://CRAN.R-project.org/package=googleway	
+						</br>
+						R Core Team (2018). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/.
+						</br>
+						</h6></p>
+						
+					</div>
+						<hr>
+					</div>
+					
+					
+					<div class="w3-container w3-center">
+						<h5><p><a href="index.html">Home</a></p></h5>
+						</br>
+					</div>
+				</div>
+			</div>
+		<!-- End Grid -->
+		</div>	
+
+	<!-- End Page Container -->
+	</div>
+
+<footer class="w3-container w3-dark-grey w3-center w3-margin-top">
+		</br
+		><p>Find me on social media.</p>
+		<a href= "https://www.facebook.com/cyberperfil"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+		<a href= "https://www.instagram.com/mxscczz"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+		<a href= "https://twitter.com/aximilo"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+		<a href= "https://www.linkedin.com/in/scocozza/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+	  	<p>Powered by <a href="index.html" target="_blank">aximilo</a></p>
+		</br>
+	</footer>
+<script src="maximilianoscocozza.github.io/bootstrap.js"></script>
+</body>
+</html>
