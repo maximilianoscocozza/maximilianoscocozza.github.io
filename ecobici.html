@@ -66,8 +66,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<h3 class="w3-text-grey w3-padding-16">Visualización de datos</h3><hr>
           
 					<div class="w3-container w3-text-left">
-						<h5 class="w3-opacity"><b>Artificial Intellingence & Private Metadata: Barriers and oportunities for a shared economy future</b></h5>
-						<h6  text-align:justify>Una de las tendencias en movilidad más importantes de los últimos años en las ciudades más innovadoras del mundo es el desarrollo de las bicicletas como medio de transporte urbano.
+						<h5 class="w3-opacity"><b>Análisis del sistema de bicicletas públicas de la ciudad de Buenos Aires</b></h5>
+						<h6  class="w3-justify">Una de las tendencias en movilidad más importantes de los últimos años en las ciudades más innovadoras del mundo es el desarrollo de las bicicletas como medio de transporte urbano.
 
 En línea con los objetivos de desarrollo sostenible que plantea la ONU, y con la intención de reducir la congestión en la ciudades, reduciendo el volumen de los vehículos circulantes, el uso de las bicicletas ha aumentado en promedio más de xx%.
 
@@ -78,12 +78,31 @@ Sin embargo, al igual que cualquier fenómeno que involucre a individuos y su in
 Tener acceso a una bicicleta no explica significativamente el uso que se le dé. Este fenómeno debe evaluarse identificando las cualidades diferenciales de los usuarios y entendiendo el contexto en el cual el uso de este medio se da, es de suma importancia para poder continuar con su desarrollo en el futuro.
 
 En el marco de la semana de los datos abiertos, que actualmente se está celebrando en la Ciudad de Buenos Aires, es que aprovecho para compartir una breve visualización de los patrones latentes en el uso del servicio de bicicletas públicas de la Ciudad de Buenos Aires.</h6>
+						<hr>
 						<img src="https://raw.githubusercontent.com/maximilianoscocozza/maximilianoscocozza.github.io/master/Intensidadxdia_mdt.png" style="width:100%" alt="network graph" >
-						<h6>Al agregar los viajes realizados en el último año por día y hora es posible identificar dos patrones claros dependiendo el tipo de uso que se le da a la Ecobici. A partir del supuesto de que una bicicleta devuelta en el mismo punto donde se extrajo es una señal uso recreativo mientras que si se devuelve en un punto distinto se trata de uso como modo de transporte, es posible identificar dos patrones de usos distintivos según los días y horarios de ambos casos. </h6>
+						<h6 class="w3-justify">Al agregar los viajes realizados en el último año por día y hora es posible identificar dos patrones claros dependiendo el tipo de uso que se le da a la Ecobici. A partir del supuesto de que una bicicleta devuelta en el mismo punto donde se extrajo es una señal uso recreativo mientras que si se devuelve en un punto distinto se trata de uso como modo de transporte, es posible identificar dos patrones de usos distintivos según los días y horarios de ambos casos. </h6>
+						<hr>
 						<img src="https://raw.githubusercontent.com/maximilianoscocozza/maximilianoscocozza.github.io/master/Intensidadxdia_rec.png" style="width:100%" alt="network graph" >
-						<h6>Otra dinámica distintiva del uso del servicio es la diferencia entre individuos de distintos sexo. En el último año sólo el 28% de los usos fueron realizados por individuos de sexo femenino. Al evaluar 500 tramos más recorridos entre dos estaciones distintas, es posible identificar que el uso proporcional del sexo femenino es varía por hora y día y zona con tendencia muy interesantes. Por ejemplo, la zona de la terminal de Retiro y Barracas son las menos frecuentadas por ellas. En cambio, los fines de semana y las horas no laborales parecen entusiarmarlas más, sobretodo cuando se trata de la zona de Palermo. </h6>
+						<h6 class="w3-justify">Otra dinámica distintiva del uso del servicio es la diferencia entre individuos de distintos sexo. En el último año sólo el 28% de los usos fueron realizados por individuos de sexo femenino. Al evaluar 500 tramos más recorridos entre dos estaciones distintas, es posible identificar que el uso proporcional del sexo femenino es varía por hora y día y zona con tendencia muy interesantes. Por ejemplo, la zona de la terminal de Retiro y Barracas son las menos frecuentadas por ellas. En cambio, los fines de semana y las horas no laborales parecen entusiarmarlas más, sobretodo cuando se trata de la zona de Palermo. </h6>
+						<hr>
 						<img src="https://raw.githubusercontent.com/maximilianoscocozza/maximilianoscocozza.github.io/master/timelapse_week_use.gif" style="width:100%" alt="network graph" >
-						<h6></h6>
+						
+						<h6 class="w3-left-align w3-tiny">Los datos fueron procesados y las imágenes producidas enteramente con R a través de Rstudio y con la ayuda de los siguientes paquetes de código: 
+						</br>
+						Wickham. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016.
+						</br>
+						Frank E Harrell Jr, with contributions from Charles Dupont and many others. (2018).Hmisc: Harrell Miscellaneous. R package version 4.1-1. https://CRAN.R-project.org/package=Hmisc
+						</br>
+						D. Kahle and H. Wickham. ggmap: Spatial Visualization with ggplot2. The R Journal, 5(1), 144-161. http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf
+						</br>
+						Garrett Grolemund, Hadley Wickham (2011). Dates and Times Made Easy with lubridate. Journal of Statistical Software, 40(3), 1-25. http://www.jstatsoft.org/v40/i03/
+						</br>
+						David Cooley (2018). googleway: Accesses Google Maps APIs to Retrieve Data and Plot Maps. R package version 2.7.0. https://CRAN.R-project.org/package=googleway	
+						</br>
+						R Core Team (2018). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/.
+						</br>
+						</h6>
+						
 					</div>
 						<hr>
 					</div>
