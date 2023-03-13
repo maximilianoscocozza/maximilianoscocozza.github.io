@@ -4,40 +4,65 @@
     <meta charset="utf-8">
     <title>Nohlan Chart</title>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
   </head>
   <body>
+    <div class="wrapper">
     <svg id="grafico"></svg>
+    </div>
     <script>
       // definir los datos de los políticos argentinos y estadounidenses
       var datos = [
-        {nombre: "Mauricio Macri", x: 3, y: -3},
-        {nombre: "Cristina Fernández de Kirchner", x: -3, y: -1},
-        {nombre: "Alberto Fernández", x: -2, y: -2},
-        {nombre: "Horacio Rodriguez Larreta", x: 2, y: -2},
-        {nombre: "Patricia Bullrich", x: 3, y: -1},
-        {nombre: "Javier Milei", x: 3, y: 3},
-        {nombre: "Sergio Massa", x: 0, y: -1},
-        {nombre: "Domingo Faustino Sarmiento", x: 1, y: 1},
-        {nombre: "Fernando de la Rúa", x: -1, y: -2},
-        {nombre: "Carlos Menem", x: 1, y: -1},
-        {nombre: "Juan Domingo Perón", x: -1, y: 1},
-        {nombre: "Barack Obama", x: -1, y: 3},
-        {nombre: "Donald Trump", x: 3, y: 1},
-        {nombre: "Millard Fillmore", x: -2, y: 2},
-        {nombre: "Abraham Lincoln", x: -2, y: 3},
-        {nombre: "Andrew Johnson", x: -3, y: 2},
+        {nombre: "Mauricio Macri @A", x: 3, y: -3},
+        {nombre: "Cristina Fernández de Kirchner @A", x: -3, y: -1},
+        {nombre: "Alberto Fernández @A", x: -2, y: -2},
+        {nombre: "Horacio Rodriguez Larreta @A", x: 2, y: -2},
+        {nombre: "Patricia Bullrich @A", x: 3, y: -1},
+        {nombre: "Javier Milei @A", x: 3, y: 3},
+        {nombre: "Sergio Massa @A", x: 0, y: -1},
+        {nombre: "Domingo Faustino Sarmiento @A", x: 1, y: 1},
+        {nombre: "Fernando de la Rúa @A", x: -1, y: -2},
+        {nombre: "Carlos Menem @A", x: 1, y: -1},
+        {nombre: "Juan Domingo Perón @A", x: -1, y: 1},
+        {nombre: "Barack Obama @U", x: -1, y: 3},
+        {nombre: "Donald Trump @U", x: 3, y: 1},
+        {nombre: "Millard Fillmore @U", x: -2, y: 2},
+        {nombre: "Abraham Lincoln @U", x: -2, y: 3},
+        {nombre: "Andrew Johnson @U", x: -3, y: 2},
       ];
 
+          // función que busca la imagen de Wikipedia del político correspondiente
+      function buscarImagen(nombre) {
+        var url = "https://es.wikipedia.org/w/api.php?action=query&prop=pageimages&titles=" + nombre + "&format=json&pithumbsize=100";
+        return fetch(url)
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(data) {
+            var pages = data.query.pages;
+            for (var page in pages) {
+              if (pages.hasOwnProperty(page)) {
+                if (pages[page].hasOwnProperty("thumbnail")) {
+                  return pages[page].thumbnail.source;
+                }
+              }
+            }
+            return null;
+          });
+      }
+
+       
       // definir las dimensiones del gráfico y las escalas para los ejes X e Y
-      var margen = {arriba: 10, derecha: 10, abajo: 30, izquierda: 30};
-      var ancho = 500 - margen.izquierda - margen.derecha;
-      var alto = 500 - margen.arriba - margen.abajo;
+      var margen = {arriba: 10, derecha: 40, abajo: 30, izquierda: 70};
+      var ancho = 900 - margen.izquierda - margen.derecha;
+      var alto = 700 - margen.arriba - margen.abajo;
       var escalaX = d3.scaleLinear()
-                    .domain([-3, 3])
-                    .range([0, ancho]);
+                    .domain([-4, 3])
+                    .range([10, ancho-10]);
       var escalaY = d3.scaleLinear()
-                    .domain([-3, 3])
-                    .range([alto, 0]);
+                    .domain([-3, 3.5])
+                    .range([alto-50, 10]);
 
       // crear el elemento SVG y agregar los puntos para cada político
       var svg = d3.select("#grafico")
@@ -49,9 +74,9 @@
                   .append("circle")
                   .attr("cx", function(d) { return escalaX(d.x); })
                   .attr("cy", function(d) { return escalaY(d.y); })
-                  .attr("r", 5)
-              .attr("fill", function(d) {
-                if (d.nombre.includes("Argentino")) {
+                  .attr("r", 8)
+                  .attr("fill", function(d) {
+                if (d.nombre.includes("A")) {
                   return "blue"; // Políticos argentinos
                 } else {
                   return "red"; // Políticos estadounidenses
@@ -99,5 +124,6 @@
     .attr("transform", "rotate(-90," + (margen.izquierda - 20) + "," + (margen.arriba + alto/2) + ")")
     .text("Visión social (de Autoritario a Libertario)");
 </script>
+ </div>
 </body>
 </html>
