@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nohlan Chart</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+  </head>
+  <body>
+    <svg id="grafico"></svg>
+    <script>
+      // definir los datos de los políticos argentinos y estadounidenses
+      var datos = [
+        {nombre: "Mauricio Macri", x: 3, y: -3},
+        {nombre: "Cristina Fernández de Kirchner", x: -3, y: -1},
+        {nombre: "Alberto Fernández", x: -2, y: -2},
+        {nombre: "Horacio Rodriguez Larreta", x: 2, y: -2},
+        {nombre: "Patricia Bullrich", x: 3, y: -1},
+        {nombre: "Javier Milei", x: 3, y: 3},
+        {nombre: "Sergio Massa", x: 0, y: -1},
+        {nombre: "Domingo Faustino Sarmiento", x: 1, y: 1},
+        {nombre: "Fernando de la Rúa", x: -1, y: -2},
+        {nombre: "Carlos Menem", x: 1, y: -1},
+        {nombre: "Juan Domingo Perón", x: -1, y: 1},
+        {nombre: "Barack Obama", x: -1, y: 3},
+        {nombre: "Donald Trump", x: 3, y: 1},
+        {nombre: "Millard Fillmore", x: -2, y: 2},
+        {nombre: "Abraham Lincoln", x: -2, y: 3},
+        {nombre: "Andrew Johnson", x: -3, y: 2},
+      ];
+
+      // definir las dimensiones del gráfico y las escalas para los ejes X e Y
+      var margen = {arriba: 10, derecha: 10, abajo: 30, izquierda: 30};
+      var ancho = 500 - margen.izquierda - margen.derecha;
+      var alto = 500 - margen.arriba - margen.abajo;
+      var escalaX = d3.scaleLinear()
+                    .domain([-3, 3])
+                    .range([0, ancho]);
+      var escalaY = d3.scaleLinear()
+                    .domain([-3, 3])
+                    .range([alto, 0]);
+
+      // crear el elemento SVG y agregar los puntos para cada político
+      var svg = d3.select("#grafico")
+                .attr("width", ancho + margen.izquierda + margen.derecha)
+                .attr("height", alto + margen.arriba + margen.abajo);
+      var puntos = svg.selectAll("circle")
+                  .data(datos)
+                  .enter()
+                  .append("circle")
+                  .attr("cx", function(d) { return escalaX(d.x); })
+                  .attr("cy", function(d) { return escalaY(d.y); })
+                  .attr("r", 5)
+              .attr("fill", function(d) {
+                if (d.nombre.includes("Argentino")) {
+                  return "blue"; // Políticos argentinos
+                } else {
+                  return "red"; // Políticos estadounidenses
+                }
+              });
+
+  // agregar los ejes X e Y y las etiquetas
+  var ejeX = d3.axisBottom(escalaX)
+            .ticks(7)
+            .tickFormat(function(d) {
+              if (d == -3) {
+                return "Liberal";
+              } else if (d == 3) {
+                return "Conservador";
+              } else {
+                return "";
+              }
+            });
+  var ejeY = d3.axisLeft(escalaY)
+            .ticks(7)
+            .tickFormat(function(d) {
+              if (d == -3) {
+                return "Autoritario";
+              } else if (d == 3) {
+                return "Libertario";
+              } else {
+                return "";
+              }
+            });
+  svg.append("g")
+    .attr("transform", "translate(" + margen.izquierda + "," + (alto + margen.arriba) + ")")
+    .call(ejeX);
+  svg.append("g")
+    .attr("transform", "translate(" + margen.izquierda + "," + margen.arriba + ")")
+    .call(ejeY);
+  svg.append("text")
+    .attr("x", margen.izquierda + ancho/2)
+    .attr("y", margen.arriba + alto + margen.abajo)
+    .attr("text-anchor", "middle")
+    .text("Visión económica (de Liberal a Conservador)");
+  svg.append("text")
+    .attr("x", margen.izquierda - 20)
+    .attr("y", margen.arriba + alto/2)
+    .attr("text-anchor", "middle")
+    .attr("transform", "rotate(-90," + (margen.izquierda - 20) + "," + (margen.arriba + alto/2) + ")")
+    .text("Visión social (de Autoritario a Libertario)");
+</script>
+</body>
+</html>
